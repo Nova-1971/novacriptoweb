@@ -53,6 +53,14 @@ export default function Home() {
               className="inline-flex mt-8 bg-sky-400 text-slate-900 font-semibold px-5 py-3 rounded-xl shadow hover:bg-sky-300"
             >
               Contactar para inversión
+<a
+  href="/whitepaper-novacriptoweb.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="px-6 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700 transition"
+>
+  Ver White Paper
+</a>
             </a>
 
             {/* TARJETAS RESUMEN */}
@@ -174,6 +182,62 @@ export default function Home() {
           </div>
         </section>
       </main>
+{/* CONTACTO */}
+<section id="contact" className="mt-20">
+  <h2 className="text-3xl font-bold text-center mb-6">Contacto</h2>
+  <p className="text-center text-white/70 max-w-2xl mx-auto mb-8 text-sm">
+    Escríbenos y te responderemos a <strong>founder@novacriptoweb.com</strong>
+  </p>
+
+  <div className="max-w-xl mx-auto bg-white/5 border border-white/10 rounded-2xl p-6">
+    <form
+      action="https://formspree.io/f/XXXXYYYY"
+      method="POST"
+      className="space-y-4"
+    >
+      <input type="hidden" name="subject" value="Nuevo contacto desde NOVACRIPTOWEB" />
+
+      <div>
+        <label className="block text-sm mb-1 text-white/80">Nombre</label>
+        <input
+          name="name"
+          required
+          className="w-full rounded-xl bg-black/20 border border-white/10 px-4 py-3 outline-none focus:border-sky-400"
+          placeholder="Tu nombre"
+        />
+      </div>
+
+      <div>
+        <label className="block text-sm mb-1 text-white/80">Email</label>
+        <input
+          name="email"
+          type="email"
+          required
+          className="w-full rounded-xl bg-black/20 border border-white/10 px-4 py-3 outline-none focus:border-sky-400"
+          placeholder="tuemail@ejemplo.com"
+        />
+      </div>
+
+      <div>
+        <label className="block text-sm mb-1 text-white/80">Mensaje</label>
+        <textarea
+          name="message"
+          required
+          rows={5}
+          className="w-full rounded-xl bg-black/20 border border-white/10 px-4 py-3 outline-none focus:border-sky-400"
+          placeholder="Cuéntanos en qué podemos ayudarte..."
+        />
+      </div>
+
+      <button
+        type="submit"
+        className="w-full bg-sky-400 text-slate-900 font-semibold px-5 py-3 rounded-2xl shadow hover:bg-sky-300"
+      >
+        Enviar mensaje
+      </button>
+    </form>
+  </div>
+</section>
 
       {/* FOOTER */}
       <footer className="border-t border-white/10 py-6 text-center text-xs text-white/60">
