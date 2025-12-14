@@ -58,7 +58,15 @@ export default function Home() {
   target="_blank"
   rel="noopener noreferrer"
   className="px-6 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700 transition"
+><a
+  href="/investor-summary-novacriptoweb.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="px-6 py-3 rounded-xl bg-gray-700 text-white"
 >
+  Descargar Investor Summary
+</a>
+
   Ver White Paper
 </a>
             </a>
