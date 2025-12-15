@@ -52,24 +52,33 @@ export default function Home() {
               href="mailto:founder@novacriptoweb.com"
               className="inline-flex mt-8 bg-sky-400 text-slate-900 font-semibold px-5 py-3 rounded-xl shadow hover:bg-sky-300"
             >
-              Contactar para inversión
-<a
-  href="/whitepaper-novacriptoweb.pdf"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="px-6 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700 transition"
-><a
-  href="/investor-summary-novacriptoweb.pdf"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="px-6 py-3 rounded-xl bg-gray-700 text-white"
->
-  Descargar Investor Summary
-</a>
+              <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+  <a
+    href="mailto:founder@novacriptoweb.com"
+    className="px-6 py-3 rounded-xl bg-sky-400 text-slate-900 font-semibold shadow hover:bg-sky-300 transition"
+  >
+    Contactar para inversión
+  </a>
 
-  Ver White Paper
-</a>
-            </a>
+  <a
+    href="/investor-summary-novacriptoweb.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="px-6 py-3 rounded-xl bg-white/10 text-white border border-white/15 shadow hover:bg-white/15 transition"
+  >
+    Descargar Investor Summary
+  </a>
+
+  <a
+    href="/whitepaper-novacriptoweb.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="px-6 py-3 rounded-xl bg-white/10 text-white border border-white/15 shadow hover:bg-white/15 transition"
+  >
+    Ver White Paper
+  </a>
+</div>
+
 
             {/* TARJETAS RESUMEN */}
             <div className="mt-10 grid md:grid-cols-3 gap-4 text-sm text-left">
