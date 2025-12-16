@@ -109,8 +109,11 @@ export default function Home() {
         </section>
 
         {/* TOKENOMICS */}
-        <section id="tokenomics" className="mt-20">
-          <h2 className="text-3xl font-bold text-center mb-6">Tokenomics del token NOVA (NVC)</h2>
+<section id="tokenomics" className="mt-20">
+  <h2 className="text-3xl font-bold text-center mb-6">Tokenomics…</h2>
+  ...
+</section>
+
 
           <div className="overflow-x-auto">
             <table className="w-full text-left text-sm bg-white/5 border border-white/10 rounded-xl">
