@@ -1,122 +1,108 @@
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[radial-gradient(circle_at_10%_0%,rgba(0,195,255,0.15),transparent),linear-gradient(#0A1E3A,#031020)] text-white">
-
+    <div className="min-h-screen bg-slate-950 text-white">
       {/* NAVBAR */}
-      <header className="sticky top-0 z-20 bg-[#0A1E3A]/70 backdrop-blur border-b border-white/10">
-        <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <header className="sticky top-0 z-20 border-b border-white/10 bg-slate-950/70 backdrop-blur">
+        <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+          <div className="font-bold tracking-wide">NOVACRIPTOWEB</div>
 
-          <div className="font-bold tracking-wide text-lg">NOVACRIPTOWEB</div>
+          <div className="flex items-center gap-6 text-sm text-white/80">
+            <a href="#tokenomics" className="hover:text-white">
+              Tokenomics
+            </a>
+            <a href="#roadmap" className="hover:text-white">
+              Roadmap
+            </a>
 
-          <div className="flex items-center gap-6 text-sm">
-            <a href="#tokenomics" className="hover:text-sky-300">Tokenomics</a>
-            <a href="#roadmap" className="hover:text-sky-300">Roadmap</a>
-
-            {/* Botón para invertir */}
             <a
               href="mailto:founder@novacriptoweb.com"
-              className="bg-sky-400 text-slate-900 font-semibold px-4 py-2 rounded-xl shadow hover:bg-sky-300"
+              className="rounded-lg bg-sky-400 px-4 py-2 font-semibold text-slate-900 hover:bg-sky-300"
             >
               Invertir
             </a>
-
-            {/* Cambiar idioma */}
-            <div className="h-5 w-px bg-white/20" />
-            <span className="font-semibold text-sky-300 text-xs">ES</span>
-            <span className="text-white/40 text-xs">/</span>
-            <a href="/en" className="hover:text-sky-300 text-xs">EN</a>
           </div>
         </nav>
       </header>
 
-      {/* CONTENIDO PRINCIPAL */}
-      <main className="max-w-6xl mx-auto px-6 pt-16 pb-20">
-
+      <main className="mx-auto max-w-6xl px-6">
         {/* HERO */}
-        <section className="min-h-[60vh] flex items-center justify-center">
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="text-sm uppercase tracking-[0.25em] text-sky-300/80">
-              NOVACRIPTOWEB · TOKEN NOVA (NVC)
-            </p>
+        <section className="py-16 text-center">
+          <p className="text-xs tracking-[0.35em] text-white/60">
+            NOVACRIPTOWEB · TOKEN NOVA (NVC)
+          </p>
 
-            <h1 className="mt-4 text-3xl md:text-5xl font-extrabold leading-tight">
-              Plataforma digital financiera para el intercambio de criptomonedas
-            </h1>
+          <h1 className="mt-5 text-4xl font-extrabold leading-tight md:text-6xl">
+            Plataforma digital financiera <br />
+            para el intercambio de criptomonedas
+          </h1>
 
-            <p className="mt-4 text-white/80 text-lg">
-              NOVACRIPTOWEB es una plataforma para el intercambio seguro y sencillo de criptomonedas. 
-              El token <strong>NOVA (NVC)</strong> impulsa el ecosistema con utilidad real: descuentos en comisiones, acceso premium y participación en gobernanza.
-            </p>
+          <p className="mx-auto mt-6 max-w-3xl text-white/70">
+            NOVACRIPTOWEB es una plataforma para el intercambio seguro y sencillo de criptomonedas.
+            El token NOVA (NVC) impulsa el ecosistema con utilidad real: descuentos en comisiones,
+            acceso premium y participación en gobernanza.
+          </p>
 
+          {/* BOTONES (ARREGLADOS, SEPARADOS) */}
+          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
               href="mailto:founder@novacriptoweb.com"
-              className="inline-flex mt-8 bg-sky-400 text-slate-900 font-semibold px-5 py-3 rounded-xl shadow hover:bg-sky-300"
+              className="rounded-xl bg-sky-400 px-6 py-3 font-semibold text-slate-900 hover:bg-sky-300"
             >
-              <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-  <a
-    href="mailto:founder@novacriptoweb.com"
-    className="px-6 py-3 rounded-xl bg-sky-400 text-slate-900 font-semibold shadow hover:bg-sky-300 transition"
-  >
-    Contactar para inversión
-  </a>
+              Contactar para inversión
+            </a>
 
-  <a
-    href="/investor-summary-novacriptoweb.pdf"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="px-6 py-3 rounded-xl bg-white/10 text-white border border-white/15 shadow hover:bg-white/15 transition"
-  >
-    Descargar Investor Summary
-  </a>
+            <a
+              href="/investor-summary-novacriptoweb.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-xl border border-white/15 bg-white/10 px-6 py-3 font-semibold text-white hover:bg-white/15"
+            >
+              Descargar Investor Summary
+            </a>
 
-  <a
-    href="/whitepaper-novacriptoweb.pdf"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="px-6 py-3 rounded-xl bg-white/10 text-white border border-white/15 shadow hover:bg-white/15 transition"
-  >
-    Ver White Paper
-  </a>
-</div>
+            <a
+              href="/whitepaper-novacriptoweb.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-xl border border-white/15 bg-white/10 px-6 py-3 font-semibold text-white hover:bg-white/15"
+            >
+              Ver White Paper
+            </a>
+          </div>
 
+          {/* TARJETAS RESUMEN */}
+          <div className="mt-12 grid gap-4 md:grid-cols-3">
+            <div className="rounded-xl border border-white/10 bg-white/5 p-5 text-left">
+              <h3 className="font-semibold">NOVA (NVC)</h3>
+              <p className="mt-2 text-sm text-white/70">
+                Token de utilidad y gobernanza dentro del ecosistema NOVACRIPTOWEB.
+              </p>
+            </div>
 
-            {/* TARJETAS RESUMEN */}
-            <div className="mt-10 grid md:grid-cols-3 gap-4 text-sm text-left">
-              <div className="bg-white/5 border border-white/10 rounded-2xl p-4">
-                <h2 className="font-semibold mb-2">NOVA (NVC)</h2>
-                <p className="text-white/70">
-                  Token de utilidad y gobernanza dentro del ecosistema NOVACRIPTOWEB.
-                </p>
-              </div>
+            <div className="rounded-xl border border-white/10 bg-white/5 p-5 text-left">
+              <h3 className="font-semibold">Valor para usuarios</h3>
+              <ul className="mt-2 list-disc pl-5 text-sm text-white/70">
+                <li>Descuentos en comisiones.</li>
+                <li>Recompensas por uso y fidelidad.</li>
+                <li>Acceso a funciones avanzadas.</li>
+              </ul>
+            </div>
 
-              <div className="bg-white/5 border border-white/10 rounded-2xl p-4">
-                <h2 className="font-semibold mb-2">Valor para usuarios</h2>
-                <ul className="list-disc list-inside text-white/70 space-y-1">
-                  <li>Descuentos en comisiones.</li>
-                  <li>Recompensas por uso y fidelidad.</li>
-                  <li>Acceso a funciones avanzadas.</li>
-                </ul>
-              </div>
-
-              <div className="bg-white/5 border border-white/10 rounded-2xl p-4">
-                <h2 className="font-semibold mb-2">Visión</h2>
-                <p className="text-white/70">
-                  Hacer el mundo cripto más claro, más seguro y accesible para usuarios nuevos e inversores.
-                </p>
-              </div>
+            <div className="rounded-xl border border-white/10 bg-white/5 p-5 text-left">
+              <h3 className="font-semibold">Visión</h3>
+              <p className="mt-2 text-sm text-white/70">
+                Hacer el mundo cripto más claro, más seguro y accesible para usuarios nuevos e inversores.
+              </p>
             </div>
           </div>
         </section>
 
         {/* TOKENOMICS */}
-<section id="tokenomics" className="mt-20">
-  <h2 className="text-3xl font-bold text-center mb-6">Tokenomics…</h2>
-  ...
-</section>
+        <section id="tokenomics" className="py-16">
+          <h2 className="text-3xl font-bold text-center mb-8">Tokenomics del token NOVA (NVC)</h2>
 
-
-          <div className="overflow-x-auto">
-            <table className="w-full text-left text-sm bg-white/5 border border-white/10 rounded-xl">
+          <div className="overflow-x-auto rounded-xl border border-white/10">
+            <table className="w-full text-left text-sm">
               <thead className="bg-white/10">
                 <tr>
                   <th className="px-4 py-3">Categoría</th>
@@ -124,35 +110,32 @@ export default function Home() {
                   <th className="px-4 py-3">Descripción</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr className="border-b border-white/10">
-                  <td className="px-4 py-3">Equipo & Advisors</td>
-                  <td className="px-4 py-3">17%</td>
-                  <td className="px-4 py-3">Bloqueo 48 meses + 12 meses cliff.</td>
-                </tr>
 
-                <tr className="border-b border-white/10">
-                  <td className="px-4 py-3">Liquidez inicial</td>
-                  <td className="px-4 py-3">13%</td>
-                  <td className="px-4 py-3">Liquidez en mercados iniciales.</td>
-                </tr>
-
-                <tr className="border-b border-white/10">
-                  <td className="px-4 py-3">Tesorería & desarrollo</td>
-                  <td className="px-4 py-3">20%</td>
-                  <td className="px-4 py-3">Operaciones, crecimiento y expansión.</td>
-                </tr>
-
-                <tr className="border-b border-white/10">
-                  <td className="px-4 py-3">Recompensas & comunidad</td>
-                  <td className="px-4 py-3">25%</td>
-                  <td className="px-4 py-3">Staking, incentivos y adopción.</td>
-                </tr>
-
+              <tbody className="divide-y divide-white/10">
                 <tr>
-                  <td className="px-4 py-3">Rondas de inversión</td>
+                  <td className="px-4 py-3">Liquidez</td>
+                  <td className="px-4 py-3">20%</td>
+                  <td className="px-4 py-3">Pool inicial y estabilidad de mercado</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3">Desarrollo</td>
                   <td className="px-4 py-3">25%</td>
-                  <td className="px-4 py-3">Venta privada y pública.</td>
+                  <td className="px-4 py-3">Producto, seguridad, infraestructura</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3">Marketing</td>
+                  <td className="px-4 py-3">15%</td>
+                  <td className="px-4 py-3">Crecimiento en Venezuela y LATAM</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3">Equipo</td>
+                  <td className="px-4 py-3">20%</td>
+                  <td className="px-4 py-3">Vesting / incentivos del equipo</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3">Comunidad</td>
+                  <td className="px-4 py-3">20%</td>
+                  <td className="px-4 py-3">Recompensas e incentivos</td>
                 </tr>
               </tbody>
             </table>
@@ -160,109 +143,53 @@ export default function Home() {
         </section>
 
         {/* ROADMAP */}
-        <section id="roadmap" className="mt-20">
-          <h2 className="text-3xl font-bold text-center mb-6">Roadmap 2025</h2>
+        <section id="roadmap" className="py-16">
+          <h2 className="text-3xl font-bold text-center mb-8">Roadmap 2025</h2>
 
-          <div className="grid md:grid-cols-4 gap-4 text-sm">
-            <div className="bg-white/5 border border-white/10 rounded-xl p-4">
-              <h3 className="font-semibold mb-1">Q1 · Bases del proyecto</h3>
-              <ul className="list-disc list-inside text-white/70">
-                <li>Definición funcional.</li>
-                <li>Estructura del token NOVA.</li>
-                <li>Modelo de gobernanza.</li>
+          <div className="grid gap-4 md:grid-cols-4 text-sm">
+            <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+              <h3 className="font-semibold mb-2">Q1 · Bases</h3>
+              <ul className="list-disc pl-5 text-white/70">
+                <li>Definición funcional</li>
+                <li>Estructura del token</li>
+                <li>Modelo de gobernanza</li>
               </ul>
             </div>
 
-            <div className="bg-white/5 border border-white/10 rounded-xl p-4">
-              <h3 className="font-semibold mb-1">Q2 · MVP & seguridad</h3>
-              <ul className="list-disc list-inside text-white/70">
-                <li>MVP de la plataforma.</li>
-                <li>KYC/AML.</li>
-                <li>Auditoría de smart contracts.</li>
+            <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+              <h3 className="font-semibold mb-2">Q2 · MVP</h3>
+              <ul className="list-disc pl-5 text-white/70">
+                <li>Interfaz inicial</li>
+                <li>Integraciones</li>
+                <li>Seguridad</li>
               </ul>
             </div>
 
-            <div className="bg-white/5 border border-white/10 rounded-xl p-4">
-              <h3 className="font-semibold mb-1">Q3 · Lanzamiento</h3>
-              <ul className="list-disc list-inside text-white/70">
-                <li>Lanzamiento inicial.</li>
-                <li>Listados de NOVA.</li>
-                <li>Programa de recompensas.</li>
+            <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+              <h3 className="font-semibold mb-2">Q3 · Crecimiento</h3>
+              <ul className="list-disc pl-5 text-white/70">
+                <li>Marketing</li>
+                <li>Comunidad</li>
+                <li>Alianzas</li>
               </ul>
             </div>
 
-            <div className="bg-white/5 border border-white/10 rounded-xl p-4">
-              <h3 className="font-semibold mb-1">Q4 · Escalamiento</h3>
-              <ul className="list-disc list-inside text-white/70">
-                <li>Expansión internacional.</li>
-                <li>Integración de partners.</li>
-                <li>Roadmap 2026.</li>
+            <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+              <h3 className="font-semibold mb-2">Q4 · Expansión</h3>
+              <ul className="list-disc pl-5 text-white/70">
+                <li>Escalado</li>
+                <li>Nuevas funciones</li>
+                <li>Expansión regional</li>
               </ul>
             </div>
           </div>
         </section>
+
+        {/* FOOTER */}
+        <footer className="border-t border-white/10 py-8 text-center text-sm text-white/60">
+          © {new Date().getFullYear()} NOVACRIPTOWEB · Token NOVA (NVC)
+        </footer>
       </main>
-{/* CONTACTO */}
-<section id="contact" className="mt-20">
-  <h2 className="text-3xl font-bold text-center mb-6">Contacto</h2>
-  <p className="text-center text-white/70 max-w-2xl mx-auto mb-8 text-sm">
-    Escríbenos y te responderemos a <strong>founder@novacriptoweb.com</strong>
-  </p>
-
-  <div className="max-w-xl mx-auto bg-white/5 border border-white/10 rounded-2xl p-6">
-    <form
-      action="https://formspree.io/f/XXXXYYYY"
-      method="POST"
-      className="space-y-4"
-    >
-      <input type="hidden" name="subject" value="Nuevo contacto desde NOVACRIPTOWEB" />
-
-      <div>
-        <label className="block text-sm mb-1 text-white/80">Nombre</label>
-        <input
-          name="name"
-          required
-          className="w-full rounded-xl bg-black/20 border border-white/10 px-4 py-3 outline-none focus:border-sky-400"
-          placeholder="Tu nombre"
-        />
-      </div>
-
-      <div>
-        <label className="block text-sm mb-1 text-white/80">Email</label>
-        <input
-          name="email"
-          type="email"
-          required
-          className="w-full rounded-xl bg-black/20 border border-white/10 px-4 py-3 outline-none focus:border-sky-400"
-          placeholder="tuemail@ejemplo.com"
-        />
-      </div>
-
-      <div>
-        <label className="block text-sm mb-1 text-white/80">Mensaje</label>
-        <textarea
-          name="message"
-          required
-          rows={5}
-          className="w-full rounded-xl bg-black/20 border border-white/10 px-4 py-3 outline-none focus:border-sky-400"
-          placeholder="Cuéntanos en qué podemos ayudarte..."
-        />
-      </div>
-
-      <button
-        type="submit"
-        className="w-full bg-sky-400 text-slate-900 font-semibold px-5 py-3 rounded-2xl shadow hover:bg-sky-300"
-      >
-        Enviar mensaje
-      </button>
-    </form>
-  </div>
-</section>
-
-      {/* FOOTER */}
-      <footer className="border-t border-white/10 py-6 text-center text-xs text-white/60">
-        © {new Date().getFullYear()} NOVACRIPTOWEB · Token NOVA (NVC)
-      </footer>
     </div>
   );
 }
