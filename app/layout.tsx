@@ -1,19 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "NOVACRIPTOWEB | Plataforma financiera cripto para LATAM",
+  metadataBase: new URL("https://novacriptoweb.com"),
+  title: {
+    default: "NOVACRIPTOWEB",
+    template: "%s | NOVACRIPTOWEB",
+  },
   description:
-    "NOVACRIPTOWEB es una plataforma digital financiera para el intercambio seguro de criptomonedas, enfocada en crecimiento, transparencia y adopción en Latinoamérica.",
-  keywords: [
-    "cripto",
-    "exchange",
-    "fintech",
-    "blockchain",
-    "LATAM",
-    "criptomonedas",
-    "plataforma financiera",
-  ],
+    "Plataforma digital financiera para el intercambio de criptomonedas. Token NOVA (NVC) con utilidad real: descuentos, acceso premium y gobernanza.",
   authors: [{ name: "Aquile Rafael Cones" }],
   creator: "NOVACRIPTOWEB",
-  metadataBase: new URL("https://novacriptoweb.com"),
 };
