@@ -17,4 +17,3 @@ export const metadata: Metadata = {
   creator: "NOVACRIPTOWEB",
   metadataBase: new URL("https://novacriptoweb.com"),
 };
-
