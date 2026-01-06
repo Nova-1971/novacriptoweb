@@ -45,14 +45,15 @@ export default function Home() {
           </p>
 
           <h1 className="mt-5 text-4xl font-extrabold leading-tight md:text-6xl">
-            Digital Financial Platform <br />
-            Secure cryptocurrency exchange
+            Digital financial infrastructure <br />
+            for the future of crypto exchange
           </h1>
 
           <p className="mx-auto mt-6 max-w-3xl text-white/70">
-            NOVACRIPTOWEB is a platform for safe and simple cryptocurrency exchange.
-            The NOVA token (NVC) powers the ecosystem with real utility: fee discounts,
-            premium access, and governance participation.
+            NOVACRIPTOWEB is a platform in development focused on building a secure, transparent, and scalable ecosystem for cryptocurrency exchange.
+            The NOVA token (NVC) powers the ecosystem with real utility, incentives,
+            and decentralized governance.
+
           </p>
 
           {/* BUTTONS */}
