@@ -37,13 +37,13 @@ export default function Home() {
 
           <h1 className="mt-5 text-4xl font-extrabold leading-tight md:text-6xl">
             Plataforma digital financiera <br />
-            para el intercambio de criptomonedas
+            para el futuro del intercambio cripto
           </h1>
 
           <p className="mx-auto mt-6 max-w-3xl text-white/70">
-            NOVACRIPTOWEB es una plataforma para el intercambio seguro y sencillo de criptomonedas.
-            El token NOVA (NVC) impulsa el ecosistema con utilidad real: descuentos en comisiones,
-            acceso premium y participación en gobernanza.
+            NOVACRIPTOWEB es una plataforma en desarollo enfocada en crear un ecosistema seguro, transparente y escalable para el intercambio de criptomonedas.
+            El token NOVA (NVC) impulsa el ecosistema con utilidad real, 
+            incentivos y gobernanzas.
           </p>
 
           {/* BOTONES (ARREGLADOS, SEPARADOS) */}
