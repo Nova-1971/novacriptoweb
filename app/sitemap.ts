@@ -1,15 +1,9 @@
-import type { MetadataRoute } from "next";
+iimport type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const siteUrl = "https://novacripto.com";
-  const now = new Date();
-
+  const baseUrl = "https://novacriptoweb.com";
   return [
-    {
-      url: siteUrl,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 1,
-    },
+    { url: `${baseUrl}/`, lastModified: new Date(), changeFrequency: "weekly", priority: 1 },
+    { url: `${baseUrl}/en`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
   ];
 }

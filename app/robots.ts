@@ -1,16 +1,9 @@
 import type { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
-  const siteUrl = "https://novacripto.com";
-
   return {
-    rules: [
-      {
-        userAgent: "*",
-        allow: "/",
-      },
-    ],
-    sitemap: `${siteUrl}/sitemap.xml`,
-    host: siteUrl,
+    rules: [{ userAgent: "*", allow: "/" }],
+    sitemap: "https://novacriptoweb.com/sitemap.xml",
   };
 }
+
