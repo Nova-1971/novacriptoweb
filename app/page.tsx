@@ -1,91 +1,78 @@
-import Link from "next/link";
-export default function Home() {
+export default function HomeES() {
   return (
-    <div className="min-h-screen bg-slate-950 text-white">
-      {/* NAVBAR */}
-<header className="sticky top-0 z-20 border-b border-white/10 bg-slate-950/80 backdrop-blur">
-  <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-    <div className="font-bold tracking-wide">NOVACRIPTOWEB</div>
+    <main className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-white">
+      <header className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
+        <div className="text-sm font-semibold tracking-widest text-white/80">
+          NOVACRIPTOWEB
+        </div>
 
-    <div className="flex items-center gap-6 text-sm text-white/80">
-      <a href="#tokenomics" className="hover:text-white">Tokenomics</a>
-      <a href="#roadmap" className="hover:text-white">Roadmap</a>
+        <nav className="flex items-center gap-4 text-sm text-white/70">
+          <a className="hover:text-white" href="#tokenomics">Tokenomics</a>
+          <a className="hover:text-white" href="#roadmap">Roadmap</a>
 
-      <a
-        href="mailto:founder@novacriptoweb.com"
-        className="rounded-lg bg-sky-400 px-4 py-2 font-semibold text-slate-900 hover:bg-sky-300"
-      >
-        Invertir
-      </a>
+          <span className="mx-1 text-white/30">|</span>
 
-      {/* Switch ES/EN */}
-      <div className="flex items-center gap-2">
-        <Link href="/" className="text-white/70 hover:text-white">ES</Link>
-        <span className="text-white/30">|</span>
-        <Link href="/en" className="text-white/70 hover:text-white">EN</Link>
-      </div>
-    </div>
-  </nav>
-</header>
+          <a className="rounded-md border border-white/15 px-2 py-1 hover:border-white/30" href="/">
+            ES
+          </a>
+          <a className="rounded-md border border-white/15 px-2 py-1 hover:border-white/30" href="/en">
+            EN
+          </a>
+        </nav>
+      </header>
 
-      <main className="mx-auto max-w-6xl px-6">
-        {/* HERO */}
-        <section className="py-16 text-center">
-          <p className="text-xs tracking-[0.35em] text-white/60">
-            NOVACRIPTOWEB · TOKEN NOVA (NVC)
-          </p>
+      <section className="mx-auto max-w-6xl px-6 pb-16 pt-10">
+        <div className="mx-auto max-w-4xl text-center">
+          <div className="mb-4 text-xs font-semibold tracking-[0.3em] text-white/60">
+            NOVACRIPTOWEB • TOKEN NOVA (NVC)
+          </div>
 
-          <h1 className="mt-5 text-4xl font-extrabold leading-tight md:text-6xl">
+          <h1 className="text-4xl font-extrabold leading-tight tracking-tight md:text-6xl">
             Plataforma digital financiera <br />
-            para el futuro del intercambio cripto
+            para el intercambio de <br />
+            criptomonedas
           </h1>
 
           <p className="mx-auto mt-6 max-w-3xl text-white/70">
-            NOVACRIPTOWEB es una plataforma en desarollo enfocada en crear un ecosistema seguro, transparente y escalable para el intercambio de criptomonedas.
-            El token NOVA (NVC) impulsa el ecosistema con utilidad real, 
-            incentivos y gobernanzas.
+            NOVACRIPTOWEB es una plataforma para el intercambio seguro y sencillo de criptomonedas.
+            El token NOVA (NVC) impulsa el ecosistema con utilidad real: descuentos en comisiones,
+            acceso premium y participación en gobernanza.
           </p>
 
-          {/* BOTONES (ARREGLADOS, SEPARADOS) */}
-          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <a
-              href="mailto:founder@novacriptoweb.com"
-              className="rounded-xl bg-sky-400 px-6 py-3 font-semibold text-slate-900 hover:bg-sky-300"
+              href="#"
+              className="rounded-lg bg-cyan-500 px-5 py-3 text-sm font-semibold text-slate-950 hover:bg-cyan-400"
             >
               Contactar para inversión
             </a>
 
             <a
-              href="/investor-summary-novacriptoweb.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-xl border border-white/15 bg-white/10 px-6 py-3 font-semibold text-white hover:bg-white/15"
+              href="/download.pdf"
+              className="rounded-lg border border-white/15 px-5 py-3 text-sm font-semibold text-white hover:border-white/30"
             >
               Descargar Investor Summary
             </a>
 
             <a
               href="/whitepaper-novacriptoweb.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-xl border border-white/15 bg-white/10 px-6 py-3 font-semibold text-white hover:bg-white/15"
+              className="rounded-lg border border-white/15 px-5 py-3 text-sm font-semibold text-white hover:border-white/30"
             >
               Ver White Paper
             </a>
           </div>
 
-          {/* TARJETAS RESUMEN */}
-          <div className="mt-12 grid gap-4 md:grid-cols-3">
+          <div className="mt-10 grid gap-4 md:grid-cols-3">
             <div className="rounded-xl border border-white/10 bg-white/5 p-5 text-left">
-              <h3 className="font-semibold">NOVA (NVC)</h3>
+              <div className="text-sm font-semibold">NOVA (NVC)</div>
               <p className="mt-2 text-sm text-white/70">
                 Token de utilidad y gobernanza dentro del ecosistema NOVACRIPTOWEB.
               </p>
             </div>
 
             <div className="rounded-xl border border-white/10 bg-white/5 p-5 text-left">
-              <h3 className="font-semibold">Valor para usuarios</h3>
-              <ul className="mt-2 list-disc pl-5 text-sm text-white/70">
+              <div className="text-sm font-semibold">Valor para usuarios</div>
+              <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-white/70">
                 <li>Descuentos en comisiones.</li>
                 <li>Recompensas por uso y fidelidad.</li>
                 <li>Acceso a funciones avanzadas.</li>
@@ -93,152 +80,32 @@ export default function Home() {
             </div>
 
             <div className="rounded-xl border border-white/10 bg-white/5 p-5 text-left">
-              <h3 className="font-semibold">Visión</h3>
+              <div className="text-sm font-semibold">Visión</div>
               <p className="mt-2 text-sm text-white/70">
                 Hacer el mundo cripto más claro, más seguro y accesible para usuarios nuevos e inversores.
               </p>
             </div>
           </div>
-        </section>
+        </div>
 
-        {/* TOKENOMICS */}
-        <section id="tokenomics" className="py-16">
-          <h2 className="text-3xl font-bold text-center mb-8">Tokenomics del token NOVA (NVC)</h2>
+        <div id="tokenomics" className="mt-16 text-center">
+          <h2 className="text-2xl font-bold">Tokenomics del token NOVA (NVC)</h2>
+          <p className="mt-3 text-white/70">
+            (Aquí va tu tabla/porcentajes. Mañana lo conectamos a tu tokenomics real.)
+          </p>
+        </div>
 
-          <div className="overflow-x-auto rounded-xl border border-white/10">
-            <table className="w-full text-left text-sm">
-              <thead className="bg-white/10">
-                <tr>
-                  <th className="px-4 py-3">Categoría</th>
-                  <th className="px-4 py-3">%</th>
-                  <th className="px-4 py-3">Descripción</th>
-                </tr>
-              </thead>
+        <div id="roadmap" className="mt-16 text-center">
+          <h2 className="text-2xl font-bold">Roadmap</h2>
+          <p className="mt-3 text-white/70">
+            (Aquí va tu roadmap. Mañana lo dejamos bonito y profesional.)
+          </p>
+        </div>
+      </section>
 
-              <tbody className="divide-y divide-white/10">
-                <tr>
-                  <td className="px-4 py-3">Liquidez</td>
-                  <td className="px-4 py-3">20%</td>
-                  <td className="px-4 py-3">Pool inicial y estabilidad de mercado</td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-3">Desarrollo</td>
-                  <td className="px-4 py-3">25%</td>
-                  <td className="px-4 py-3">Producto, seguridad, infraestructura</td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-3">Marketing</td>
-                  <td className="px-4 py-3">15%</td>
-                  <td className="px-4 py-3">Crecimiento en Venezuela y LATAM</td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-3">Equipo</td>
-                  <td className="px-4 py-3">20%</td>
-                  <td className="px-4 py-3">Vesting / incentivos del equipo</td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-3">Comunidad</td>
-                  <td className="px-4 py-3">20%</td>
-                  <td className="px-4 py-3">Recompensas e incentivos</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        {/* ROADMAP */}
-        <section id="roadmap" className="py-16">
-          <h2 className="text-3xl font-bold text-center mb-8">Roadmap 2025</h2>
-
-          <div className="grid gap-4 md:grid-cols-4 text-sm">
-            <div className="rounded-xl border border-white/10 bg-white/5 p-5">
-              <h3 className="font-semibold mb-2">Q1 · Bases</h3>
-              <ul className="list-disc pl-5 text-white/70">
-                <li>Definición funcional</li>
-                <li>Estructura del token</li>
-                <li>Modelo de gobernanza</li>
-              </ul>
-            </div>
-
-            <div className="rounded-xl border border-white/10 bg-white/5 p-5">
-              <h3 className="font-semibold mb-2">Q2 · MVP</h3>
-              <ul className="list-disc pl-5 text-white/70">
-                <li>Interfaz inicial</li>
-                <li>Integraciones</li>
-                <li>Seguridad</li>
-              </ul>
-            </div>
-
-            <div className="rounded-xl border border-white/10 bg-white/5 p-5">
-              <h3 className="font-semibold mb-2">Q3 · Crecimiento</h3>
-              <ul className="list-disc pl-5 text-white/70">
-                <li>Marketing</li>
-                <li>Comunidad</li>
-                <li>Alianzas</li>
-              </ul>
-            </div>
-
-            <div className="rounded-xl border border-white/10 bg-white/5 p-5">
-              <h3 className="font-semibold mb-2">Q4 · Expansión</h3>
-              <ul className="list-disc pl-5 text-white/70">
-                <li>Escalado</li>
-                <li>Nuevas funciones</li>
-                <li>Expansión regional</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-{/* TRUST & SECURITY */}
-<section id="security" className="py-16">
-  <h2 className="text-3xl font-bold text-center mb-6">
-    Trust & Security
-  </h2>
-
-  <div className="mx-auto max-w-4xl space-y-6 text-white/80 text-sm leading-relaxed">
-
-    <div className="rounded-xl border border-white/10 bg-white/5 p-6">
-      <h3 className="mb-2 text-lg font-semibold text-white">
-        Security-first Philosophy
-      </h3>
-      <p>
-        At NOVACRIPTOWEB, we believe there is no sustainable growth without trust.
-        The platform is being designed from the ground up with a security-first
-        approach, prioritizing user fund protection, operational integrity, and
-        long-term transparency.
-      </p>
-    </div>
-
-    <div className="rounded-xl border border-white/10 bg-white/5 p-6">
-      <h3 className="mb-2 text-lg font-semibold text-white">
-        Planned Best Practices
-      </h3>
-      <ul className="list-disc pl-5 space-y-1">
-        <li>Separation of operational and user funds</li>
-        <li>Secure custody-oriented architecture</li>
-        <li>Progressive KYC/AML integration aligned with regulations</li>
-        <li>Security audits planned before critical releases</li>
-      </ul>
-    </div>
-
-    <div className="rounded-xl border border-white/10 bg-white/5 p-6">
-      <h3 className="mb-2 text-lg font-semibold text-white">
-        Commitment to Transparency
-      </h3>
-      <p>
-        NOVACRIPTOWEB does not promise guaranteed returns or fixed profits.
-        The NOVA (NVC) token is a utility and governance token whose value
-        depends on real platform adoption and ecosystem usage.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-        {/* FOOTER */}
-        <footer className="border-t border-white/10 py-8 text-center text-sm text-white/60">
-          © {new Date().getFullYear()} NOVACRIPTOWEB · Token NOVA (NVC)
-        </footer>
-      </main>
-    </div>
+      <footer className="border-t border-white/10 py-8 text-center text-sm text-white/60">
+        © {new Date().getFullYear()} NOVACRIPTOWEB • NOVA Token (NVC)
+      </footer>
+    </main>
   );
 }
