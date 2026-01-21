@@ -90,12 +90,54 @@ export default function HomeES() {
           </div>
         </div>
 
-        <div id="tokenomics" className="mt-16 text-center">
-          <h2 className="text-2xl font-bold">Tokenomics del token NOVA (NVC)</h2>
-          <p className="mt-3 text-white/70">
-            (Aquí va tu tabla/porcentajes. Mañana lo conectamos a tu tokenomics real.)
-          </p>
-        </div>
+        {/* TOKENOMICS */}
+<section id="tokenomics" className="mt-20">
+  <h2 className="text-3xl font-bold text-center mb-6">Tokenomics del token NOVA (NVC)</h2>
+
+  <div className="overflow-x-auto">
+    <table className="w-full text-left text-sm bg-white/5 border border-white/10 rounded-xl overflow-hidden">
+      <thead className="bg-white/10">
+        <tr>
+          <th className="px-4 py-3">Categoría</th>
+          <th className="px-4 py-3">%</th>
+          <th className="px-4 py-3">Descripción</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr className="border-t border-white/10">
+          <td className="px-4 py-3">Liquidez</td>
+          <td className="px-4 py-3">17%</td>
+          <td className="px-4 py-3">Proveer liquidez en exchanges y pools</td>
+        </tr>
+        <tr className="border-t border-white/10">
+          <td className="px-4 py-3">Desarrollo</td>
+          <td className="px-4 py-3">13%</td>
+          <td className="px-4 py-3">Construcción del producto, seguridad y auditorías</td>
+        </tr>
+        <tr className="border-t border-white/10">
+          <td className="px-4 py-3">Marketing</td>
+          <td className="px-4 py-3">20%</td>
+          <td className="px-4 py-3">Crecimiento, comunidad, alianzas</td>
+        </tr>
+        <tr className="border-t border-white/10">
+          <td className="px-4 py-3">Equipo</td>
+          <td className="px-4 py-3">25%</td>
+          <td className="px-4 py-3">Asignación para equipo (con vesting recomendado)</td>
+        </tr>
+        <tr className="border-t border-white/10">
+          <td className="px-4 py-3">Reservas</td>
+          <td className="px-4 py-3">25%</td>
+          <td className="px-4 py-3">Fondo estratégico para oportunidades</td>
+        </tr>
+        <tr className="border-t border-white/10">
+          <td className="px-4 py-3">Incentivos</td>
+          <td className="px-4 py-3">10%</td>
+          <td className="px-4 py-3">Recompensas, referidos, campañas y adopción</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
 
         <div id="roadmap" className="mt-16 text-center">
           <h2 className="text-2xl font-bold">Roadmap</h2>
