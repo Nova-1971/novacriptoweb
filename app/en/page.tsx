@@ -199,6 +199,96 @@ export default function Home() {
             </div>
           </div>
         </section>
+{/* TRUST & SECURITY */}
+<section id="security" className="py-16">
+  <h2 className="text-3xl font-bold text-center mb-6">
+    Trust & Security
+  </h2>
+
+  <div className="mx-auto max-w-4xl space-y-6 text-white/80 text-sm leading-relaxed">
+
+    <div className="rounded-xl border border-white/10 bg-white/5 p-6">
+      <h3 className="mb-2 text-lg font-semibold text-white">
+        Security-first Philosophy
+      </h3>
+      <p>
+        At NOVACRIPTOWEB, we believe there is no sustainable growth without trust.
+        The platform is being designed from the ground up with a security-first
+        approach, prioritizing user fund protection, operational integrity, and
+        long-term transparency.
+      </p>
+    </div>
+
+    <div className="rounded-xl border border-white/10 bg-white/5 p-6">
+      <h3 className="mb-2 text-lg font-semibold text-white">
+        Planned Best Practices
+      </h3>
+      <ul className="list-disc pl-5 space-y-1">
+        <li>Separation of operational and user funds</li>
+        <li>Secure custody-oriented architecture</li>
+        <li>Progressive KYC/AML integration aligned with regulations</li>
+        <li>Security audits planned before critical releases</li>
+      </ul>
+    </div>
+
+    <div className="rounded-xl border border-white/10 bg-white/5 p-6">
+      <h3 className="mb-2 text-lg font-semibold text-white">
+        Commitment to Transparency
+      </h3>
+      <p>
+        NOVACRIPTOWEB does not promise guaranteed returns or fixed profits.
+        The NOVA (NVC) token is a utility and governance token whose value
+        depends on real platform adoption and ecosystem usage.
+      </p>
+    </div>
+
+  </div>
+</section>
+{/* TRUST & SECURITY */}
+<section id="security" className="py-16">
+  <h2 className="text-3xl font-bold text-center mb-6">
+    Trust & Security
+  </h2>
+
+  <div className="mx-auto max-w-4xl space-y-6 text-white/80 text-sm leading-relaxed">
+
+    <div className="rounded-xl border border-white/10 bg-white/5 p-6">
+      <h3 className="mb-2 text-lg font-semibold text-white">
+        Security-first Philosophy
+      </h3>
+      <p>
+        At NOVACRIPTOWEB, we believe there is no sustainable growth without trust.
+        The platform is being designed from the ground up with a security-first
+        approach, prioritizing user fund protection, operational integrity, and
+        long-term transparency.
+      </p>
+    </div>
+
+    <div className="rounded-xl border border-white/10 bg-white/5 p-6">
+      <h3 className="mb-2 text-lg font-semibold text-white">
+        Planned Best Practices
+      </h3>
+      <ul className="list-disc pl-5 space-y-1">
+        <li>Separation of operational and user funds</li>
+        <li>Secure custody-oriented architecture</li>
+        <li>Progressive KYC/AML integration aligned with regulations</li>
+        <li>Security audits planned before critical releases</li>
+      </ul>
+    </div>
+
+    <div className="rounded-xl border border-white/10 bg-white/5 p-6">
+      <h3 className="mb-2 text-lg font-semibold text-white">
+        Commitment to Transparency
+      </h3>
+      <p>
+        NOVACRIPTOWEB does not promise guaranteed returns or fixed profits.
+        The NOVA (NVC) token is a utility and governance token whose value
+        depends on real platform adoption and ecosystem usage.
+      </p>
+    </div>
+
+  </div>
+</section>
 
         {/* FOOTER */}
         <footer className="border-t border-white/10 py-8 text-center text-sm text-white/60">
