@@ -126,33 +126,56 @@ export default function Home() {
                 </tr>
               </thead>
 
-              <tbody className="divide-y divide-white/10">
-                <tr>
-                  <td className="px-4 py-3">Liquidity</td>
-                  <td className="px-4 py-3">20%</td>
-                  <td className="px-4 py-3">Initial pool and market stability</td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-3">Development</td>
-                  <td className="px-4 py-3">25%</td>
-                  <td className="px-4 py-3">Product, security, infrastructure</td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-3">Marketing</td>
-                  <td className="px-4 py-3">15%</td>
-                  <td className="px-4 py-3">Growth in Venezuela and LATAM</td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-3">Team</td>
-                  <td className="px-4 py-3">20%</td>
-                  <td className="px-4 py-3">Vesting / team incentives</td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-3">Community</td>
-                  <td className="px-4 py-3">20%</td>
-                  <td className="px-4 py-3">Rewards and incentives</td>
-                </tr>
-              </tbody>
+  <tbody className="divide-y divide-white/10">
+  <tr>
+    <td className="px-4 py-3">Initial liquidity</td>
+    <td className="px-4 py-3">15%</td>
+    <td className="px-4 py-3">
+      Support for future listings and market stability
+    </td>
+  </tr>
+
+  <tr>
+    <td className="px-4 py-3">Development & Security</td>
+    <td className="px-4 py-3">25%</td>
+    <td className="px-4 py-3">
+      Product development, infrastructure, audits, and security
+    </td>
+  </tr>
+
+  <tr>
+    <td className="px-4 py-3">Ecosystem & Community</td>
+    <td className="px-4 py-3">20%</td>
+    <td className="px-4 py-3">
+      Usage incentives, organic growth, marketing, and adoption
+    </td>
+  </tr>
+
+  <tr>
+    <td className="px-4 py-3">Team & Founders</td>
+    <td className="px-4 py-3">15%</td>
+    <td className="px-4 py-3">
+      Long-term vesting and incentives aligned with growth
+    </td>
+  </tr>
+
+  <tr>
+    <td className="px-4 py-3">Strategic investors</td>
+    <td className="px-4 py-3">15%</td>
+    <td className="px-4 py-3">
+      Pre-Seed / Seed focused on capital plus know-how
+    </td>
+  </tr>
+
+  <tr>
+    <td className="px-4 py-3">Reserve / Treasury</td>
+    <td className="px-4 py-3">10%</td>
+    <td className="px-4 py-3">
+      Strategic flexibility for the project’s future
+    </td>
+  </tr>
+</tbody>
+
             </table>
           </div>
         </section>
