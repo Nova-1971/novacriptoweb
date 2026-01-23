@@ -79,32 +79,55 @@ export default function Home() {
               </tr>
             </thead>
             <tbody className="divide-y divide-white/10">
-              <tr>
-                <td className="px-4 py-3">Liquidez</td>
-                <td className="px-4 py-3">20%</td>
-                <td className="px-4 py-3">Pool inicial y estabilidad del mercado</td>
-              </tr>
-              <tr>
-                <td className="px-4 py-3">Desarrollo</td>
-                <td className="px-4 py-3">25%</td>
-                <td className="px-4 py-3">Producto, seguridad e infraestructura</td>
-              </tr>
-              <tr>
-                <td className="px-4 py-3">Marketing</td>
-                <td className="px-4 py-3">15%</td>
-                <td className="px-4 py-3">Crecimiento en Venezuela y LATAM</td>
-              </tr>
-              <tr>
-                <td className="px-4 py-3">Equipo</td>
-                <td className="px-4 py-3">20%</td>
-                <td className="px-4 py-3">Vesting e incentivos del equipo</td>
-              </tr>
-              <tr>
-                <td className="px-4 py-3">Comunidad</td>
-                <td className="px-4 py-3">20%</td>
-                <td className="px-4 py-3">Recompensas e incentivos</td>
-              </tr>
-            </tbody>
+  <tr>
+    <td className="px-4 py-3">Liquidez inicial</td>
+    <td className="px-4 py-3">15%</td>
+    <td className="px-4 py-3">
+      Soporte para futuros listings y estabilidad del mercado
+    </td>
+  </tr>
+
+  <tr>
+    <td className="px-4 py-3">Desarrollo & Seguridad</td>
+    <td className="px-4 py-3">25%</td>
+    <td className="px-4 py-3">
+      Desarrollo del producto, infraestructura, auditorías y seguridad
+    </td>
+  </tr>
+
+  <tr>
+    <td className="px-4 py-3">Ecosistema & Comunidad</td>
+    <td className="px-4 py-3">20%</td>
+    <td className="px-4 py-3">
+      Incentivos de uso, crecimiento orgánico, marketing y adopción
+    </td>
+  </tr>
+
+  <tr>
+    <td className="px-4 py-3">Equipo & Founders</td>
+    <td className="px-4 py-3">15%</td>
+    <td className="px-4 py-3">
+      Vesting a largo plazo e incentivos alineados al crecimiento
+    </td>
+  </tr>
+
+  <tr>
+    <td className="px-4 py-3">Inversores estratégicos</td>
+    <td className="px-4 py-3">15%</td>
+    <td className="px-4 py-3">
+      Pre-Seed / Seed con enfoque en capital y know-how
+    </td>
+  </tr>
+
+  <tr>
+    <td className="px-4 py-3">Reserva / Tesorería</td>
+    <td className="px-4 py-3">10%</td>
+    <td className="px-4 py-3">
+      Flexibilidad estratégica para el futuro del proyecto
+    </td>
+  </tr>
+</tbody>
+
           </table>
         </div>
       </section>
