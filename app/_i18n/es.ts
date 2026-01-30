@@ -48,17 +48,30 @@ export const es = {
     rows: [
       { category: "Liquidez", percent: "20%", description: "Pool inicial y estabilidad del mercado" },
       { category: "Desarrollo", percent: "25%", description: "Producto, seguridad e infraestructura" },
-      { category: "Ecosistema y Comunidad", percent: "35incóm35%", description: "Crecimiento de comunidad, marketing e incentivos" },
+      {
+        category: "Ecosistema y Comunidad",
+        percent: "35%",
+        description: "Crecimiento de comunidad, marketing e incentivos",
+      },
       { category: "Equipo", percent: "20%", description: "Vesting e incentivos del equipo" },
     ],
   },
 
   roadmap: {
     title: "Roadmap 2025",
-    q1: { title: "Q1 · Fundamentos", bullets: ["Definición funcional del producto", "Estructura del token", "Modelo de gobernanza"] },
+    q1: {
+      title: "Q1 · Fundamentos",
+      bullets: ["Definición funcional del producto", "Estructura del token", "Modelo de gobernanza"],
+    },
     q2: { title: "Q2 · MVP", bullets: ["Interfaz inicial", "Integraciones técnicas", "Seguridad"] },
-    q3: { title: "Q3 · Crecimiento", bullets: ["Marketing", "Construcción de comunidad", "Alianzas estratégicas"] },
-    q4: { title: "Q4 · Expansión", bullets: ["Escalado de la plataforma", "Nuevas funcionalidades", "Expansión regional"] },
+    q3: {
+      title: "Q3 · Crecimiento",
+      bullets: ["Marketing", "Construcción de comunidad", "Alianzas estratégicas"],
+    },
+    q4: {
+      title: "Q4 · Expansión",
+      bullets: ["Escalado de la plataforma", "Nuevas funcionalidades", "Expansión regional"],
+    },
   },
 
   economicModel: {
